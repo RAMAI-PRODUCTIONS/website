@@ -1,6 +1,6 @@
-# Three.js Test Pipeline
+# React Three Fiber Pipeline
 
-Minimal Three.js deployment test for cross-platform game development.
+Modern React-based 3D rendering pipeline using React Three Fiber for cross-platform game development.
 
 ## Live Demo
 
@@ -8,18 +8,20 @@ Minimal Three.js deployment test for cross-platform game development.
 
 ## Features
 
-- ✅ Blank Three.js scene
-- ✅ Full HD resolution (1920x1080)
-- ✅ 60 FPS capped rendering
-- ✅ Minimal bundle size (~460 KB)
-- ✅ No dependencies (Three.js bundled)
+- ✅ React Three Fiber (R3F) - Declarative Three.js
+- ✅ React 18 with hooks and components
+- ✅ @react-three/drei - Useful helpers and abstractions
+- ✅ Responsive 3D canvas
+- ✅ Hot module replacement (HMR)
+- ✅ Optimized build pipeline
 
-## Build Statistics
+## Tech Stack
 
-- **Total Size:** 453.49 KB
-- **JS Bundle:** 452.45 KB (gzip: ~116 KB)
-- **HTML:** 1.04 KB
-- **Build Time:** ~6 seconds
+- **React** - UI library
+- **React Three Fiber** - React renderer for Three.js
+- **@react-three/drei** - Useful helpers (Text, controls, etc.)
+- **Three.js** - 3D graphics library
+- **Vite** - Fast build tool with HMR
 
 ## Local Development
 
@@ -48,4 +50,4 @@ Every push to `main` branch will rebuild and deploy automatically.
 
 ---
 
-Built with [Vite](https://vitejs.dev/) + [Three.js](https://threejs.org/)
+Built with [React](https://react.dev/) + [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) + [Vite](https://vitejs.dev/)

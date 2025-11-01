@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  plugins: [react()],
   base: '/website/',
   build: {
     target: 'esnext',
@@ -18,7 +20,7 @@ export default defineConfig({
     open: true,
   },
   optimizeDeps: {
-    include: ['three']
+    include: ['react', 'react-dom', 'three', '@react-three/fiber', '@react-three/drei']
   }
 });
 
