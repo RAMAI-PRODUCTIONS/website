@@ -4,7 +4,7 @@ Modern React-based 3D rendering pipeline using React Three Fiber for cross-platf
 
 ## Live Demo
 
-🎮 **[View Live Site](https://ramai-productions.github.io/website/)**
+🎮 **[View Live Site](https://ramai-productions.github.io/website/)** - React Three Fiber with rotating 3D cube!
 
 ## Features
 
