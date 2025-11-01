@@ -24,6 +24,58 @@ function RotatingBox() {
   );
 }
 
+function BouncingSphere() {
+  const meshRef = useRef();
+  
+  useFrame((state) => {
+    if (meshRef.current) {
+      meshRef.current.position.y = Math.sin(state.clock.elapsedTime * 2) * 1.5;
+      meshRef.current.rotation.x += 0.01;
+    }
+  });
+
+  return (
+    <mesh ref={meshRef} position={[-3, 0, 0]}>
+      <sphereGeometry args={[1, 32, 32]} />
+      <meshStandardMaterial color="#ff00ff" wireframe />
+    </mesh>
+  );
+}
+
+function OrbitingCubes() {
+  const groupRef = useRef();
+  
+  useFrame((state) => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y = state.clock.elapsedTime * 0.5;
+    }
+  });
+
+  return (
+    <group ref={groupRef}>
+      <mesh position={[3, 0, 0]}>
+        <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <meshStandardMaterial color="#00ffff" />
+      </mesh>
+      
+      <mesh position={[-3, 0, 0]}>
+        <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <meshStandardMaterial color="#ffff00" />
+      </mesh>
+      
+      <mesh position={[0, 3, 0]}>
+        <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <meshStandardMaterial color="#ff0000" />
+      </mesh>
+      
+      <mesh position={[0, -3, 0]}>
+        <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <meshStandardMaterial color="#0000ff" />
+      </mesh>
+    </group>
+  );
+}
+
 export default function App() {
   const [error, setError] = useState(null);
 
@@ -91,9 +143,12 @@ export default function App() {
         {/* Lights */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={1} />
+        <pointLight position={[-10, -10, -5]} intensity={0.5} color="#ff00ff" />
 
-        {/* 3D Content - Rotating green box */}
+        {/* 3D Content */}
         <RotatingBox />
+        <BouncingSphere />
+        <OrbitingCubes />
       </Canvas>
     </div>
   );
