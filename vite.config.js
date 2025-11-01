@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/website/',
+  base: process.env.BASE_URL || '/',
   build: {
     target: 'esnext',
     minify: 'esbuild',
