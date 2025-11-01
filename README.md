@@ -1,10 +1,10 @@
-# JS_ENGINE - Three.js Test Pipeline
+# Three.js Test Pipeline
 
 Minimal Three.js deployment test for cross-platform game development.
 
 ## Live Demo
 
-🎮 **[View Live Demo](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)**
+🎮 **[View Live Site](https://ramai-productions.github.io/website/)**
 
 ## Features
 
