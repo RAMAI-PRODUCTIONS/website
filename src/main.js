@@ -62,7 +62,8 @@ function init() {
     container.appendChild(helloText);
     
     console.log('HELLO text added to container');
-    console.log('Deployment verified - Full HD @ 60 FPS');
+    console.log('✅ Deployment verified - Full HD @ 60 FPS');
+    console.log('🎉 GitHub Pages enabled successfully!');
     
     // Handle window resize
     window.addEventListener('resize', () => {
