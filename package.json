@@ -1,8 +1,8 @@
 {
-  "name": "js-engine",
+  "name": "react-three-fiber-starter",
   "version": "1.0.0",
   "type": "module",
-  "description": "React Three Fiber pipeline for cross-platform game development",
+  "description": "A minimal React Three Fiber starter template",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
